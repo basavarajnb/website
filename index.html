@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+        <title>Page Loading</title>
+	    <meta charset="utf-8" />		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <style>
+            .loader {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: url('images/page-loader.gif') 50% 50% no-repeat rgb(100,1,10);
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $(".loader").fadeOut("slow");
+            });
+        </script>
+	</head>
+	<body>
+        <div class="loader"></div>
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" />
+    <img src="http://colourview.zencess.in/images/fulls/20.jpg" />
+    <img src="http://colourview.zencess.in/images/fulls/7.jpg" />
+    <img src="http://colourview.zencess.in/images/fulls/13.jpg" />
+    <img src="http://colourview.zencess.in/images/fulls/5.jpg" />
+    <img src="http://colourview.zencess.in/images/fulls/10.jpg" />
+    <img src="http://colourview.zencess.in/images/fulls/21.jpg" />
+</div>
+	</body>
+</html>
